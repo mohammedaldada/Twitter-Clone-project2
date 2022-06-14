@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
+  
+</head>
+<body>
+  <div class="Twitter">
+
+    <div class="navbar">
+
+      <ul class="links flex-v-center">
+        <li class="active">
+          <i class="fas fa-home"></i>
+          <span> Home</span>
+        </li>
+        <li>
+          <i class="fas fa-bolt"></i>
+          <span> Moments</span>
+        </li>
+        <li>
+          <i class="far fa-bell"></i>
+          <span> Notifications</span>
+        </li>
+        <li>
+          <i class="far fa-envelope"></i>
+          <span> Messages</span>
+        </li>
+      </ul>
+
+      <div class="bird flex-v-center">
+        <i class="fab fa-twitter"></i>
+      </div>
+
+      <div class="search flex-v-center">
+        <input placeholder="Search Twitter" />
+        <i class="fas fa-search"></i>
+      </div>
+
+      <div class="actions flex-v-center">
+        <span class="avatar fa-stack flex-v-center">
+          <i class="fas fa-circle fa-stack-2x">
+            <i class="fas fa-user fa-stack-1x"></i>            
+          </i>
+        </span>
+
+        <button id="tweet-button">
+          Tweet
+        </button>
+      </div>
+
+    </div>
+
+
+    <!-- ================================ main class -->
+
+    <main class="main">
+      <!-- ===========================first div -->
+      <div class="col left-col">
+        <div class="user-info">
+
+          <div class="card-top"></div>
+
+          <div class="card-mid">
+            <span class="fa-stack ">
+              <i class="fas fa-camera fa-stack-2x">
+                <i class="fas fa-plus fa-stack-1x"></i>            
+              </i>
+            </span>
+            <div class="twitter-handle">
+              <h3>Mohammed dada</h3>
+              <p>@modada</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <p>Tweets</p>
+            <p>Following</p>
+            <h3>10</h3>
+            <h3>50</h3>
+          </div>
+
+        </div>
+      </div>
+
+        <!-- second div================================ -->
+      <div class="col feed">
+        <div class="tweet-container">
+          <div id="tweet-box-top" class="row">
+            <form id="form">
+              <input type="text" id="twitter-username" placeholder="username"><br>
+              <textarea id="tweet" placeholder="What's happening?"></textarea>                
+              <input  id="tweet-submit" type="submit"  class="submit row" value="Tweet">                 
+            </form>
+          </div>
+ 
+        </div>
+        <div id="twitter-posts" class="twitter-posts">
+
+          <div class="tweet" id="tweets">
+            
+            <div class="tweet-left">
+              <span class="tweet-avatar fa-stack">
+                <i class="fas fa-circle fa-stack-2x">
+                  <i class="fas fa-user fa-stack-1x"></i> 
+                </i>
+              </span>
+            </div>
+            
+            <div class="tweet-right">
+              <div class="tweet-top-meta">
+                <div class="tweet-top-name-and-handle">
+                  <p class="name">Mohammed dada</p>
+                  <span>&nbsp;@modada&nbsp;</span>
+                  <span>•&nbsp;</span>
+                  <span>15m</span>  
+                </div>
+                <i class="fa fa-angle-down"></i>
+              </div>
+              
+              <p class="tweet-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nostrum repellendus adipisci accusamus, reprehenderit ea dolorum expedita. Deleniti, iure optio eius dolor eveniet, illo repellendus iusto soluta distinctio suscipit fugit.
+              </p>
+              <div class="tweet-bottom-meta">
+                      <input  type="submit" id="retweet" value="retweet">  
+                      <input type="submit" id="like" value="like">  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======================================= third div -->
+
+      <div class="col right-col">
+        <div class="advert">
+          <img src="https://abs.twimg.com/a/1553555845/img/delight/delight_prompt_2.png" />
+          <h3>Twitter-Clone</h3>
+          <p>This is a Twitter-Clone project <b>by Mohammed dada</b></p>
+        </div>
+      </div>
+    </main>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
